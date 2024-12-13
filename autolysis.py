@@ -90,13 +90,16 @@ def generate_visualizations(df, output_dir):
     for column in numeric_columns:
         if generated_images >= 5:
             break
+        # Replace whitespaces with underscores in the column name
+        column_name = column.replace(" ", "_")
+    
         plt.figure(figsize=(fig_width, fig_height))
         sns.histplot(df[column], kde=True, color="skyblue")
         plt.title(f"Distribution of {column}")
         plt.xlabel(column)
         plt.ylabel("Frequency")
         plt.legend([column], loc="upper right")
-        plt.savefig(os.path.join(output_dir, f"{column}_distribution.png"), dpi=target_dpi)
+        plt.savefig(os.path.join(output_dir, f"{column_name}_distribution.png"), dpi=target_dpi)
         plt.close()
         generated_images += 1
 
