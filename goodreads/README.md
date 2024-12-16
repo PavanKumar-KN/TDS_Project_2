@@ -44,8 +44,6 @@ Distribution plots provide insights into the spread and skewness of key numeric 
 - **Ratings Count**: The right skew indicates a concentration of books with fewer ratings.
 - **Work Ratings Count**: Similar to `ratings_count`, with a few books standing out due to a very high number of ratings.
 
-![Distribution Plots](distribution_plots.png)
-
 ## Conclusion
 The dataset presents a wealth of information related to books, their attributes, and user ratings. The analysis identifies trends such as a high average rating, significant skewness in ratings distributions, and potential outliers. Addressing missing data and outliers can further enhance the insights derived from this dataset. Future analyses may include machine learning models to predict ratings or recommendations based on book attributes. The visualizations assist in understanding data patterns and can guide strategic decisions in the book industry.
 
