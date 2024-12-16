@@ -58,13 +58,13 @@ Based on the correlation heatmap generated:
 ## 5. Visualizations
 
 ### 5.1 Correlation Heatmap
-![Correlation Heatmap](link_to_correlation_heatmap_image)
+![Correlation Heatmap](correlation_heatmap.png)
 
 This heatmap visually represents the correlations among numeric columns, highlighting the strength and direction of relationships.
 
 ### 5.2 Distribution Plots
-![Distribution Plot for Life Ladder](link_to_distribution_life_ladder_image)
-![Distribution Plot for Log GDP per Capita](link_to_distribution_log_gdp_image)
+![Distribution Plot for Life Ladder](Life_Ladder_distribution.png)
+![Distribution Plot for Log GDP per Capita](Log_GDP_per_capita_distribution.png)
 
 These plots illustrate the spread of values for key metrics like Life Ladder and Log GDP per capita, showcasing their respective distributions and highlighting any potential skew.
 
