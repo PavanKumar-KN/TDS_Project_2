@@ -55,17 +55,7 @@ Distribution plots were created for the numeric columns – 'overall', 'quality'
 
 #### 1. Correlation Heatmap
 
-```python
-import seaborn as sns
-import matplotlib.pyplot as plt
-
-# Assuming df is the DataFrame
-correlation_matrix = df[['overall', 'quality', 'repeatability']].corr()
-plt.figure(figsize=(8, 6))
-sns.heatmap(correlation_matrix, annot=True, cmap='coolwarm')
-plt.title('Correlation Heatmap')
-plt.show()
-```
+![Correlation Heatmap](correlation_heatmap.png)
 
 **Interpretation**: 
 - The heatmap indicates moderate correlation between 'overall' and 'quality' ratings (0.7), suggesting that higher overall ratings often correlate with higher quality ratings.
@@ -73,22 +63,7 @@ plt.show()
 
 #### 2. Distribution Plots
 
-```python
-import seaborn as sns
-import matplotlib.pyplot as plt
-
-sns.set(style="whitegrid")
-
-# Plotting distributions
-fig, axes = plt.subplots(nrows=3, ncols=1, figsize=(10, 15))
-
-sns.histplot(df['overall'], bins=5, kde=True, ax=axes[0]).set(title='Distribution of Overall Ratings')
-sns.histplot(df['quality'], bins=5, kde=True, ax=axes[1]).set(title='Distribution of Quality Ratings')
-sns.histplot(df['repeatability'], bins=3, kde=True, ax=axes[2]).set(title='Distribution of Repeatability Ratings')
-
-plt.tight_layout()
-plt.show()
-```
+![Overall Distribution Plot](overall_distribution.png)
 
 ## Insights
 
